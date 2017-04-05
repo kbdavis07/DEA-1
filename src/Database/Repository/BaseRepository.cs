@@ -9,6 +9,7 @@ namespace DEA.Database.Repository
 
         public static async Task InsertAsync(TEntity entity)
         {
+            
             using (var db = new DEAContext())
             {
                 db.Set<TEntity>().Add(entity);
